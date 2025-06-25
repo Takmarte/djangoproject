@@ -9,4 +9,6 @@ urlpatterns = [
     path('yes_finish/<Todos_id>',views.yes_finish,name="yes_finish"),
     path('no_finish/<Todos_id>',views.no_finish,name="no_finish"),
     path('update/<Todos_id>',views.update,name="update"),
+    path('description/<int:id>/', views.description, name='description')
+
 ]
